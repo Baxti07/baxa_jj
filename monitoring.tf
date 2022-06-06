@@ -49,3 +49,6 @@
 #   target_id = "SendToSNS"
 #   arn       = aws_sns_topic.EC2_STATE.arn
 # }
+resource "aws_sns_topic" "EC2_STATE" {
+  name = "EC2_STATE_CHANGE"
+}
